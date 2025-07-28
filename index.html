@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links | Américo Rodrigues</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="/img/img-sobre.jpg" alt="Américo Rodrigues" class="avatar" />
+      <h1>Américo Rodrigues</h1>
+      <p class="descricao">Desenvolvedor Front-End</p>
+
+      <button id="toggle-theme">☀️ Modo Claro</button>
+
+      <div class="links">
+        <a href="https://americorodriguesdev.vercel.app/" target="_blank">🌐 Meu Site</a>
+        <a href="https://github.com/americorodrigues25" target="_blank">💻 GitHub</a>
+        <a href="https://www.linkedin.com/in/americo-rodrigues025/" target="_blank"
+          >🔗 LinkedIn</a
+        >
+        <a href="https://wa.me/5511964166962?" target="_blank">💬 WhatsApp</a>
+      </div>
+
+      <footer>© 2025 Américo Rodrigues</footer>
+    </div>
+
+    <script>
+      const toggleBtn = document.getElementById("toggle-theme");
+      const body = document.body;
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("light");
+
+        if (body.classList.contains("light")) {
+          toggleBtn.textContent = "🌙 Modo Escuro";
+        } else {
+          toggleBtn.textContent = "☀️ Modo Claro";
+        }
+      });
+    </script>
+  </body>
+</html>

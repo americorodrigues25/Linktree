@@ -61,7 +61,7 @@
       <h1>Américo Rodrigues</h1>
       <p class="descricao">Desenvolvedor Front-End</p>
 
-      <button id="toggle-theme">☀️ Modo Claro</button>
+      <button id="toggle-theme">🌙 Modo Escuro</button>
 
       <div class="links">
         <a href="https://americorodriguesdev.vercel.app/" target="_blank"
@@ -85,13 +85,14 @@
       const toggleBtn = document.getElementById("toggle-theme");
       const body = document.body;
 
+      // Início com tema claro
       toggleBtn.addEventListener("click", () => {
-        body.classList.toggle("light");
+        body.classList.toggle("dark");
 
-        if (body.classList.contains("light")) {
-          toggleBtn.textContent = "🌙 Modo Escuro";
+        if (body.classList.contains("dark")) {
+          toggleBtn.textContent = "☀️ Modo Claro ";
         } else {
-          toggleBtn.textContent = "☀️ Modo Claro";
+          toggleBtn.textContent = "🌙 Modo Escuro";
         }
       });
     </script>

@@ -4,47 +4,20 @@
   box-sizing: border-box;
 }
 
-/* Tema dark */
+/* Tema claro é o padrão */
 body {
-  background-color: #030712;
+  background-color: #f5f5f5;
+  color: #333;
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: #f5f5f5;
-}
-
-/* Tema claro */
-body.light {
-  background-color: #f5f5f5;
-  color: #333;
-}
-
-body.light .container {
-  background: white;
-}
-
-body.light h1,
-body.light footer {
-  color: #333;
-}
-
-body.light .descricao {
-  color: #555;
-}
-
-body.light .links a {
-  background-color: #491bbf;
-  color: white;
-}
-
-body.light .links a:hover {
-  background-color: #0099cc;
+  padding: 1rem;
 }
 
 .container {
-  background: #030712;
+  background: white;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
@@ -52,6 +25,17 @@ body.light .links a:hover {
   max-width: 400px;
   width: 100%;
   margin: 0.375rem;
+}
+
+h1,
+footer {
+  color: #333;
+}
+
+.descricao {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
 }
 
 .avatar {
@@ -67,12 +51,6 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-.descricao {
-  font-size: 0.95rem;
-  color: #bbbbbb;
-  margin-bottom: 1.5rem;
-}
-
 #toggle-theme {
   background-color: transparent;
   color: inherit;
@@ -86,7 +64,7 @@ h1 {
 }
 
 #toggle-theme:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .links {
@@ -114,4 +92,36 @@ footer {
   margin-top: 2rem;
   font-size: 0.75rem;
   color: #bbbbbb;
+}
+
+/* Tema escuro */
+body.dark {
+  background-color: #030712;
+  color: #f5f5f5;
+}
+
+body.dark .container {
+  background: #030712;
+}
+
+body.dark h1,
+body.dark footer {
+  color: #f5f5f5;
+}
+
+body.dark .descricao {
+  color: #bbbbbb;
+}
+
+body.dark .links a {
+  background-color: #491bbf;
+  color: white;
+}
+
+body.dark .links a:hover {
+  background-color: #0099cc;
+}
+
+body.dark #toggle-theme:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
